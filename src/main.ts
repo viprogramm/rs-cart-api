@@ -12,7 +12,7 @@ async function bootstrap() {
   app.enableCors({
     origin: (req, callback) => callback(null, true),
   });
-  app.use(helmet());
+  // app.use(helmet());
 
   await app.listen(port);
 }
